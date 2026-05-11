@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+*.env
+
+# Local project runtime artifacts
+backend/.venv/
+backend/.pytest_cache/
+backend/instance/
+backend/.env
+frontend/node_modules/
+frontend/.vitest/
+frontend/coverage/
+dist/
+
+# Flask instance folder (holds the SQLite DB)
+*.db
+*.sqlite
+*.sqlite3
+
+# pytest
+.pytest_cache/
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
