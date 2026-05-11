@@ -94,7 +94,6 @@ CORS_ORIGINS=http://127.0.0.1:5500,http://localhost:5500
 
 - In `development`, CORS defaults to local frontend origins only.
 - In `production`, you **must** set `CORS_ORIGINS` (comma-separated list).
-- `phone` is optional; empty values are normalized to `null`.
 
 ## REST API
 
