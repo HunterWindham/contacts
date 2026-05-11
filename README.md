@@ -2,11 +2,32 @@
 
 A small address-book MVP. Vanilla JavaScript frontend, Flask + SQLite backend.
 
-```
+```text
 contacts/
-├── backend/        # Flask app, SQLite schema, REST endpoints, tests
-└── frontend/       # Static HTML, CSS, vanilla JS modules
+├── README.md
+├── backend/                     # Flask API + SQLite persistence
+│   ├── app/
+│   │   ├── routes/              # REST endpoints
+│   │   ├── schemas/             # Request/response validation
+│   │   ├── services/            # Data access + business logic
+│   │   └── models/              # Domain models
+│   ├── tests/                   # Backend pytest suite
+│   ├── scripts/seed_contacts.py # Local data seeding helper
+│   ├── run.py                   # Backend entrypoint
+│   ├── schema.sql               # SQLite schema
+│   └── .env.example             # Backend env template
+└── frontend/                    # Static app (vanilla JS)
+    ├── index.html               # App shell
+    ├── src/
+    │   ├── logic/               # Controllers + API client
+    │   └── ui/                  # DOM views/rendering helpers
+    ├── styles/                  # CSS
+    ├── tests/                   # Vitest suite
+    └── package.json             # Frontend scripts/deps
 ```
+
+Generated local directories (for example `backend/.venv/`,
+`backend/.pytest_cache/`, and `frontend/node_modules/`) are omitted.
 
 ## Prerequisites
 
