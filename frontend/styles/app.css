@@ -1,0 +1,33 @@
+/* Tailwind v4 (CDN) handles base styles. Keep this file for narrow overrides. */
+
+body {
+  background: radial-gradient(
+    circle at top left,
+    rgb(248 250 252) 0%,
+    rgb(241 245 249) 50%,
+    rgb(226 232 240) 100%
+  );
+}
+
+/* Keep scrollbars minimal so the list feels app-like. */
+[data-region="list"] {
+  scrollbar-width: thin;
+}
+
+[data-region="list"]::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-region="list"]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-region="list"]::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: rgb(203 213 225);
+}
+
+/* Smooth toast entrance/exit so feedback feels intentional. */
+[data-region="toast"] > div {
+  transition: opacity 200ms ease, transform 200ms ease;
+}
